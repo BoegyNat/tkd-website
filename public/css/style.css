@@ -1,0 +1,44 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("public/css/3.png"); /*background-color: rgb(159, 124, 240); จะเปลี่ยนเป็นรูปภาพในภายหลัง url('public/css/3.png') url(public/css/3.png) red*/
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin: 17px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  cursor: pointer; /* เพิ่มเมื่อต้องการให้มีการเปลี่ยนรูปแบบเมาส์เมื่อโฮเวอร์ */
+  transition: background-color 0.4s; /* เพิ่มเมื่อต้องการให้มีการเปลี่ยนแบบเมาส์เมื่อโฮเวอร์ */
+}
+
+.box:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); /* เพิ่มเมื่อต้องการให้มีการเปลี่ยนแบบเมาส์เมื่อโฮเวอร์ */
+}
+
+h2 {
+  margin: 0;
+}
